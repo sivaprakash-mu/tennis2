@@ -8,6 +8,9 @@ import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import { Authenticator } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
+//nextJS
+import {Button} from '@nextui-org/button'; 
+
 
 Amplify.configure(outputs);
 
@@ -59,7 +62,11 @@ export default function App() {
               Review next steps of this tutorial.
             </a>
           </div>
+
           <button onClick={signOut}>Sign out</button>
+          <div>
+      <Button>Click me</Button>
+    </div>
         </main>
       )}
     </Authenticator>
